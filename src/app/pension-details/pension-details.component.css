@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+.header{
+    height:15vh;
+    width:100%;
+    background-color: rgb(93, 169, 232);
+    color: rgb(12, 8, 9);
+    text-align: center;
+}
+.heading-text{
+    font-weight:bold;
+    line-height:16vh;
+    font-size:42px;
+    font-weight: bold;
+    
+}
+.content{
+    background-color: rgb(35, 53, 53);
+    height:70vh;
+    padding:20px;
+}
+.footer{
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    background-color: rgb(83, 145, 185);
+    height:7vh;
+    text-align: center;
+}
+.row{
+    margin:20px 0px;
+}
+
+.form-label{
+    color:rgba(225,234,240,255);
+    margin:8px;
+}
+.check-box{
+    width:20px;
+    height:20px;
+}
+
+.button-submit{
+    border:0px;
+    outline: 0px;
+    margin-top:10px;
+    color:rgba(246,12,78,255);
+    width:120px;
+    padding:5px 30px;
+    background-color: white;
+}
+
+.form-label-position{
+    position: relative;
+    bottom:5px;
+}
+.form-errors{
+    color:red;
+}
+.loader{
+    position:absolute;
+    top:30%;
+    left:25%;
+    background-color:white;
+    height:300px;
+    width:50%;
+    border-radius:10px;
+    box-shadow: 5px 3px 24px 7px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.loader img{
+    height:150px;
+    width:150px;
+}
+.msg-heading{
+    font-family: 'Anton', sans-serif;
+}
+@media only screen and (max-width:580px){
+    .heading-text{
+        font-size: 28px;
+    }
+    .content{
+        padding: 5px;
+    }
+    .form-label{
+        margin:2px;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+.navbar{
+    justify-content: space-between !important;
+    background-color: rgba(35,46,54,255);
+    height:8vh;
+}
+a,button{
+color: white !important;
+}
+.btn-property{
+    background-color: rgb(243, 11, 127);
+    width:80px;
+}
+.navbar-brand{
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5em;
+}
+@Media only screen and (max-width:380px){
+    .btn-property{
+        width:60px !important;
+    }
+    .navbar-brand{
+        font-size:0.75em !important;
+    }
+}

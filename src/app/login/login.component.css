@@ -1,0 +1,63 @@
+.form{
+    background: rgb(5, 5, 5);
+    border: 1px solid rgb(12, 12, 12);
+    padding: 10px;
+    width: 300px;
+}
+Html,body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.grandParentContainer{
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+   
+}
+.parentContainer{
+    padding-top: 10px;
+    display: table-cell;
+    /* vertical-align: middle; */
+   
+}
+
+  .index-styling{
+      background:url("src/assets/welcome1.jpg");
+      text-align:center;
+      /* background-size: 10px; */
+      background-size: cover;
+      background-position:bottom;
+      height:92vh;
+     
+    }
+  
+ .login-box{
+    margin-top: 75px;
+    height: auto;
+    background:burlywood;
+    text-align: center;
+ }
+ .container>.login-button:not(:last-child){
+ margin-right:10px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+ 
+
+.loader{
+    position:absolute;
+    top:20%;
+   left:45%;
+    align-items: center;
+    background-color:white;
+  }
+  .loader img{
+    height:150px;
+    width:150px;
+  }
+
+ .login-button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }

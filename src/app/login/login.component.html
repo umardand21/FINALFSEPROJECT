@@ -1,0 +1,45 @@
+<div class="container-fluid index-styling">
+    <h1>PensionManagementSystem</h1>
+    
+<div class="grandParentContainer">
+  <div class="parentContainer  ">
+    <div class="container-fluid login-box">
+        <h4 style="color: blue;"> Please login to continue</h4>
+ <form [formGroup]="credential" (ngSubmit)="userLogin()">
+  <div class="form-group">
+    <label class="form-control-label"><h6>USERNAME</h6></label>
+    <input type="username" class="form-control" formControlName="username">
+    <span class="form-errors" *ngIf="(credential.controls['username'].touched || credential.controls['username'].dirty) && credential.controls['username'].invalid && credential.controls['username'].errors?.['required']">
+        Field is required.
+    </span>
+  </div>
+  <div class="form-group">
+    <label  class="form-control-label"><h6>PASSWORD</h6></label>
+    <input type="password" class="form-control" formControlName="password" >
+    <span class="form-errors" *ngIf="(credential.controls['password'].touched || credential.controls['password'].dirty) && credential.controls['password'].invalid  && credential.controls['password'].errors?.['required']">
+      Field is required.
+    </span>
+  </div>
+  <div class="container">
+    <button type="submit" class="login-button" [disabled]='!credential.valid'>LOGIN</button>
+    <!-- <button type="button" class="Adduser-button" >New User</button> -->
+  </div>
+ </form>
+</div>
+</div>
+</div>
+
+<!--Login Failed invalid credentials -->
+<!--<div class="container-fluid login-styling">
+  <div class="alert alert-danger alert-dismissible fade show alert-styling" *ngIf=alert>
+      <button type="button" class="close" (click)='alert = false'>&times;</button>
+      <strong>Invalid credentials!</strong> Try again with correct username and password.
+  </div>-->
+<!--Login Failed Message End-->
+<div class="loader" *ngIf=loader>
+    <div>
+    <img src="assets/loader.gif">
+  </div>
+    <p class="h3 text-info">Loading...</p>
+  </div>
+ 
